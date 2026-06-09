@@ -44,7 +44,9 @@
       "options": {
         "cwd": "${workspaceFolder}/site"
       },
-      "dependsOn": ["site: install"],
+      "dependsOn": [
+        "site: install"
+      ],
       "isBackground": true,
       "problemMatcher": {
         "owner": "custom",
@@ -68,7 +70,9 @@
       "options": {
         "cwd": "${workspaceFolder}/site"
       },
-      "dependsOn": ["site: install"],
+      "dependsOn": [
+        "site: install"
+      ],
       "problemMatcher": []
     },
     {
@@ -78,7 +82,9 @@
       "options": {
         "cwd": "${workspaceFolder}/site"
       },
-      "dependsOn": ["site: install"],
+      "dependsOn": [
+        "site: install"
+      ],
       "isBackground": true,
       "problemMatcher": {
         "owner": "custom",
@@ -94,6 +100,15 @@
           "endsPattern": "Local\\s+http://localhost:4321/|Local\\s+http://127\\.0\\.0\\.1:4321/"
         }
       }
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "site",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build - site",
+      "detail": "astro build"
     }
   ]
 }
